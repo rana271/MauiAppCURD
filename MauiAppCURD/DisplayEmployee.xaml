@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppCURD.DisplayEmployee"
+             Title="DisplayEmployee">
+    <VerticalStackLayout>
+        <ListView x:Name="empListView" ItemSelected="empListView_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" />
+                    
+                </DataTemplate>
+               
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Back to Add Employee" Clicked="Button_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>
